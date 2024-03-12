@@ -1,2 +1,11 @@
-all:
-	gcc -o meditor.out main.c -lncurses 
+NAME = meditor
+FILES = main.c
+CC = gcc
+FLAGS = -Wall				\
+				-lncurses
+
+all: $(NAME)
+
+$(NAME):
+	gcc -o $(NAME).out $(FILES) $(FLAGS) 
+
